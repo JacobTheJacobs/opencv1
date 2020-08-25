@@ -12,6 +12,9 @@ while True:
     #convert frame to gray
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
+    #write
+    out.write(frame)
+    
     cv2.imshow('frame', frame)
     # apply the gray
     cv2.imshow('gray', gray)
